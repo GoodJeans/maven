@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "5d466cbb-a393-49bb-bb4c-d5e2a30bcbb2",
+		"name": "maven",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "webapi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"userId\":\"someone@someone.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8084/OtpWeb/res/otpuser/generate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"OtpWeb",
+						"res",
+						"otpuser",
+						"generate"
+					]
+				},
+				"description": "webapp"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8084/OtpWeb/res/smsUser/generate?content-type=Application-Json",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8084/OtpWeb/res/SMSAPP/myresource",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"OtpWeb",
+						"res",
+						"SMSAPP",
+						"myresource"
+					]
+				},
+				"description": "123"
+			},
+			"response": []
+		},
+		{
+			"name": "getting all data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8084/maven/res/api/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"maven",
+						"res",
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creating",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 5,\n    \"mobileNumber\": \"98712345\",\n    \"userName\": \"alien4\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8084/maven/res/api/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"maven",
+						"res",
+						"api",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updating",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"mobileNumber\": \"1231232\",\n    \"userName\": \"alien3\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8084/maven/res/api/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"maven",
+						"res",
+						"api",
+						"update"
+					]
+				},
+				"description": "update"
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8084/maven/res/api/delete/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"maven",
+						"res",
+						"api",
+						"delete",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get individual data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8084/maven/res/api/user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"maven",
+						"res",
+						"api",
+						"user",
+						"2"
+					]
+				},
+				"description": "get individual data"
+			},
+			"response": []
+		}
+	]
+}

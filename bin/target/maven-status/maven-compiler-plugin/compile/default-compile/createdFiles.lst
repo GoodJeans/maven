@@ -1,0 +1,5 @@
+com\smsserver\web\controller\QueryRepository.class
+com\smsserver\web\controller\Users.class
+com\smsserver\web\controller\APIResources.class
+com\smsserver\web\controller\JavaConfig.class
+com\smsserver\web\controller\test.class
